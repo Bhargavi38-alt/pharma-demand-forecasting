@@ -1,8 +1,4 @@
 
-## Executive Summary:
-
-This project addresses supply chain stock-outs by linking WHO epidemiological trends to pharma sales. While external signals (FluNet) were statistically redundant due to strong internal seasonality, the SARIMA model achieved a 17.4% improvement over baseline, providing a reliable 2-week lead time for inventory planning.
-
 # Pharma Demand Sensing: Time Series Forecasting
 
 ### 🚀 Overview
@@ -37,6 +33,11 @@ Supply chain teams often struggle with 2-week lead times. This project investiga
 - **17.4% Improvement** over the naive seasonal baseline.
 - **55% MAPE** on weekly granular data (within the 40-60% industry gold standard).
 - **2-Week Lead Time:** Provided actionable forecasting windows for inventory planning.
+
+---
+
+### Key Insight :
+- "Model residuals passed the Ljung-Box test (p=0.81), confirming that the SARIMAX(1,1,1)(1,1,0,52) architecture successfully captured all available signal, rendering the exogenous FluNet features statistically redundant."
 
 ---
 
